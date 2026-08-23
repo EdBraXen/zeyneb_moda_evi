@@ -172,7 +172,7 @@ export const DressDetailModal: React.FC<DressDetailModalProps> = ({
             <div className="space-y-2.5 pt-2 border-t border-[#E8DFD5]">
               <a
                 id="modal-order-whatsapp-btn"
-                href={`https://wa.me/994501234567?text=${whatsappMessage}`}
+                href={`https://wa.me/994557799450?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-5 rounded-full bg-[#1F1B16] hover:bg-[#332D24] text-white font-medium text-sm flex items-center justify-center gap-2.5 shadow-md hover:shadow-lg transition-all"

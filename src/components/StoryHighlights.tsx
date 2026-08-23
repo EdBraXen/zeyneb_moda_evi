@@ -186,7 +186,7 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
               </div>
 
               <a
-                href={`https://wa.me/994501234567?text=${encodeURIComponent(
+                href={`https://wa.me/994557799450?text=${encodeURIComponent(
                   `Salam Zeyneb Moda Evi, Instagram hekayənizdəki "${activeStory.items[activeItemIndex]?.title}" haqqında məlumat almaq istəyirəm.`
                 )}`}
                 target="_blank"

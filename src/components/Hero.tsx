@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog }) => {
 
               <a
                 id="hero-whatsapp-btn"
-                href="https://wa.me/994501234567?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20libas%20tikili%C5%9Fi%20%C3%BC%C3%A7%C3%BCn%20m%C9%99sl%C9%99h%C9%99tl%C9%99%C5%9Fm%C9%99k%20ist%C9%99yir%C9%99m."
+                href="https://wa.me/994557799450?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20libas%20tikili%C5%9Fi%20%C3%BC%C3%A7%C3%BCn%20m%C9%99sl%C9%99h%C9%99tl%C9%99%C5%9Fm%C9%99k%20ist%C9%99yir%C9%99m."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#F4EFE6] hover:bg-[#EAE2D5] text-[#24211D] font-medium text-sm border border-[#DCD1BF] transition-all flex items-center justify-center gap-2 shadow-2xs"

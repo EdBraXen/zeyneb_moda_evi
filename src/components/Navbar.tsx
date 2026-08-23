@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({ favoriteCount, onOpenFavorites }
             {/* WhatsApp Contact CTA */}
             <a
               id="nav-whatsapp-cta"
-              href="https://wa.me/994501234567?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20%C3%BC%C3%A7%C3%BCn%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m."
+              href="https://wa.me/994557799450?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20%C3%BC%C3%A7%C3%BCn%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold text-white bg-[#1F1B16] hover:bg-[#38332B] border border-[#4A4235] shadow-xs hover:shadow-sm transition-all"
@@ -187,7 +187,7 @@ export const Navbar: React.FC<NavbarProps> = ({ favoriteCount, onOpenFavorites }
                 <span>Instagram: @zeyneb_moda_evi</span>
               </a>
               <a
-                href="https://wa.me/994501234567?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20haqq%C4%B1nda%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m."
+                href="https://wa.me/994557799450?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20haqq%C4%B1nda%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-sm font-semibold text-white bg-[#1F1B16] hover:bg-[#332D24]"

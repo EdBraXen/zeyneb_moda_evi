@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/994501234567"
+                href="https://wa.me/994557799450"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-[#29241E] hover:bg-[#25D366] text-white flex items-center justify-center transition-colors"
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
-                href="tel:+994501234567"
+                href="tel:+994557799450"
                 className="w-9 h-9 rounded-full bg-[#29241E] hover:bg-[#D4AF37] text-white hover:text-[#191613] flex items-center justify-center transition-colors"
                 aria-label="Zəng"
               >
@@ -101,7 +101,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-xs text-[#A89D8E]">
               <p className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>+994 (50) 123 45 67</span>
+                <span>+994 (55) 779 94 50</span>
               </p>
               <p className="flex items-center gap-2">
                 <Instagram className="w-3.5 h-3.5 text-[#D4AF37]" />

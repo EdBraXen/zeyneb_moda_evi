@@ -24,7 +24,7 @@ export const WhatsAppOrderSection: React.FC = () => {
 📝 Əlavə qeydlər: ${customNote || 'Standart fərdi ölçü ilə'}`;
 
     const encodedMsg = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/994501234567?text=${encodedMsg}`;
+    const whatsappUrl = `https://wa.me/994557799450?text=${encodedMsg}`;
 
     setTimeout(() => {
       window.open(whatsappUrl, '_blank');
@@ -61,10 +61,10 @@ export const WhatsAppOrderSection: React.FC = () => {
                 <div>
                   <h4 className="text-xs font-bold text-[#1F1B16]">Telefon & WhatsApp</h4>
                   <a
-                    href="tel:+994501234567"
+                    href="tel:+994557799450"
                     className="text-xs text-[#5C5449] hover:text-[#99732B] font-medium block mt-0.5"
                   >
-                    +994 (50) 123 45 67
+                    +994 (55) 779 94 50
                   </a>
                   <span className="text-[11px] text-[#8C8070]">7/24 WhatsApp mesajlarına cavab verilir</span>
                 </div>
@@ -99,7 +99,7 @@ export const WhatsAppOrderSection: React.FC = () => {
             <div className="pt-2">
               <a
                 id="direct-quick-whatsapp-link"
-                href="https://wa.me/994501234567?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20sifari%C5%9Fi%20haqq%C4%B1nda%20yaz%C4%B1ram."
+                href="https://wa.me/994557799450?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20tikili%C5%9F%20sifari%C5%9Fi%20haqq%C4%B1nda%20yaz%C4%B1ram."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-[#25D366] hover:bg-[#20BA5A] text-white text-xs font-semibold shadow-md transition-all"
@@ -147,7 +147,7 @@ export const WhatsAppOrderSection: React.FC = () => {
                     <input
                       type="tel"
                       required
-                      placeholder="Məs: +994 50 123 45 67"
+                      placeholder="Məs: +994 55 779 94 50"
                       value={clientPhone}
                       onChange={(e) => setClientPhone(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#DDD3C2] text-xs text-[#1F1B16] focus:outline-hidden focus:ring-1 focus:ring-[#99732B]"

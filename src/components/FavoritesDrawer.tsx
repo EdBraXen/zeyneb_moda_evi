@@ -29,7 +29,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
     const msg = encodeURIComponent(
       `Salam Zeyneb Moda Evi! Kataloqunuzda bəyəndiyim bu libaslar haqqında fərdi tikiliş üçün məlumat almaq istəyirəm:\n${dressNames}`
     );
-    window.open(`https://wa.me/994501234567?text=${msg}`, '_blank');
+    window.open(`https://wa.me/994557799450?text=${msg}`, '_blank');
   };
 
   return (

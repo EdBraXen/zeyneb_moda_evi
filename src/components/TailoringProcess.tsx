@@ -143,7 +143,7 @@ export const TailoringProcess: React.FC = () => {
         {/* Quick Consultation CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://wa.me/994501234567?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20model%20tikili%C5%9Fi%20%C3%BC%C3%A7%C3%BCn%20konsultasiya%20almaq%20ist%C9%99yir%C9%99m."
+            href="https://wa.me/994557799450?text=Salam%2C%20Zeyneb%20Moda%20Evi%2C%20f%C9%99rdi%20model%20tikili%C5%9Fi%20%C3%BC%C3%A7%C3%BCn%20konsultasiya%20almaq%20ist%C9%99yir%C9%99m."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1F1B16] hover:bg-[#332D24] text-white text-xs font-semibold tracking-wide shadow-md transition-all"

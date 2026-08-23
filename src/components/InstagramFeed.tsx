@@ -59,66 +59,11 @@ export const InstagramFeed: React.FC = () => {
   return (
     <section id="instagram" className="py-16 md:py-24 bg-[#FAF7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Instagram Profile Header Card */}
-        <div className="bg-[#F3EDE3] rounded-3xl p-6 sm:p-8 border border-[#E0D5C5] shadow-xs mb-10 max-w-3xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
-            {/* Avatar with gold story ring */}
-            <div className="relative p-1 rounded-full bg-gradient-to-tr from-[#D4AF37] via-[#C5A059] to-[#8C6D28] flex-shrink-0">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#1F1B16] text-[#D4AF37] flex items-center justify-center font-serif text-3xl font-bold border-2 border-white shadow-sm">
-                Z
-              </div>
-            </div>
-
-            {/* Profile Info */}
-            <div className="flex-1 space-y-3">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div>
-                  <div className="flex items-center justify-center sm:justify-start gap-1.5">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#1F1B16]">
-                      zeyneb_moda_evi
-                    </h3>
-                    <CheckCircle2 className="w-4 h-4 text-[#C5A059] fill-current" />
-                  </div>
-                  <p className="text-xs text-[#7A7062] font-medium mt-0.5">
-                    Fərdi Tikiliş & Libas Atelyesi • Bakı
-                  </p>
-                </div>
-
-                <a
-                  href="https://instagram.com/zeyneb_moda_evi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#B38728] text-white text-xs font-semibold shadow-xs hover:shadow-md transition-all cursor-pointer"
-                >
-                  <Instagram className="w-3.5 h-3.5" />
-                  <span>İzlə (@zeyneb_moda_evi)</span>
-                </a>
-              </div>
-
-              {/* Bio & Stats */}
-              <p className="text-xs text-[#5C5449] leading-relaxed">
-                ✨ Fərdi tikiliş, unikal zövq <br />
-                👗 Ziyafət, Son Zəng, Toy və Gündəlik şıq libaslar <br />
-                📍 Bakı şəhəri | 📱 WhatsApp ilə birbaşa sifariş
-              </p>
-
-              {/* Simulated Stats */}
-              <div className="flex items-center justify-center sm:justify-start gap-6 pt-1 text-xs text-[#4A4235] border-t border-[#DDD1BE]">
-                <div>
-                  <span className="font-bold text-[#1F1B16]">150+</span>
-                  <span className="text-[#7A7062] ml-1">Paylaşım</span>
-                </div>
-                <div>
-                  <span className="font-bold text-[#1F1B16]">24.8K</span>
-                  <span className="text-[#7A7062] ml-1">İzləyici</span>
-                </div>
-                <div>
-                  <span className="font-bold text-[#1F1B16]">100%</span>
-                  <span className="text-[#7A7062] ml-1">Məmnuniyyət</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Elegant Minimalist Header */}
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-[11px] font-bold text-[#99732B] tracking-widest uppercase">Sosial Şəbəkə</span>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1F1B16] mt-2">Instagram Vitrinimiz</h2>
+          <p className="text-xs text-[#7A7062] font-medium mt-1">@zeyneb_moda_evi</p>
         </div>
 
         {/* Instagram Grid Showcase */}

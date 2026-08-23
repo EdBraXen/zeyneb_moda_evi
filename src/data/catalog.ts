@@ -1,4 +1,4 @@
-import { DressItem, StoryHighlight, ReviewItem, FAQItem } from '../types';
+import { DressItem, StoryHighlight } from '../types';
 
 import paltar1Img from '../images/paltar1.png';
 import paltar2Img from '../images/paltar2.png';
@@ -229,52 +229,5 @@ export const STORY_HIGHLIGHTS: StoryHighlight[] = [
   },
 ];
 
-export const CLIENT_REVIEWS: ReviewItem[] = [
-  {
-    id: 'rev-1',
-    clientName: 'Aysel M.',
-    occasion: 'Məzuniyyət Gecəsi',
-    dressTitle: 'Son Zəng Veçer Libası',
-    rating: 5,
-    comment: 'Zeyneb xanıma sonsuz təşəkkürlər! Don üzərimə elə oturdu ki, heç bir düzəlişə belə ehtiyac qalmadı. Bütün gecə hamı libasımın harada tikildiyini soruşurdu.',
-    date: 'İyul 2026',
-  },
-  {
-    id: 'rev-2',
-    clientName: 'Nigar R.',
-    occasion: 'Bacımın Toyu',
-    dressTitle: 'Eksklüziv Ziyafət Libası',
-    rating: 5,
-    comment: 'Parçanın keyfiyyəti, tikişlərin səliqəsi və vaxtında təhvil verilməsi möhtəşəm idi. Artıq bütün libaslarımı yalnız Zeyneb Moda Evi-nə həvalə edəcəm!',
-    date: 'Avqust 2026',
-  },
-  {
-    id: 'rev-3',
-    clientName: 'Ləman Ə.',
-    occasion: 'Son Zəng Tədbiri',
-    dressTitle: 'Son Zəng Mərasim Libası',
-    rating: 5,
-    comment: 'Ölçülərimi çox dəqiq götürdülər və qısa müddətdə hazır etdilər. WhatsApp üzərindən ünsiyyət də çox rahat oldu. Çox razı qaldım!',
-    date: 'İyun 2026',
-  },
-];
 
-export const FAQ_ITEMS: FAQItem[] = [
-  {
-    question: 'Fərdi tikiliş üçün sifarişi necə verə bilərəm?',
-    answer: 'Kataloqdan bəyəndiyiniz modeli seçərək və ya öz xəyalınızdakı donun şəklini WhatsApp (+994 50 123 45 67) nömrəmizə göndərə bilərsiniz. Ölçü götürmə və model detalları dərhal müzakirə olunur.',
-  },
-  {
-    question: 'Bir libasın tikilişi neçə gün çəkir?',
-    answer: 'Modelin mürəkkəbliyindən və əl işi detallarından asılı olaraq tikiliş müddəti adətən 3 ilə 7 iş günü arasında dəyişir. Təcili sifarişlər üçün də imkan yaradılır.',
-  },
-  {
-    question: 'Parçanı özüm gətirə bilərəm, yoxsa siz təmin edirsiniz?',
-    answer: 'Hər iki seçim mümkündür! İstər öz parçanızı gətirə bilərsiniz, istərsə də atelyemizdə mövcud olan premium keyfiyyətli ipək, atlas, jakard və krep parçalardan seçim edə bilərsiniz.',
-  },
-  {
-    question: 'Ölçü götürmək üçün atelyeyə gəlmək mütləqdir?',
-    answer: 'Bakıda yerləşən atelyemizə yaxınlaşaraq canlı ölçü verə bilərsiniz. Rayonlarda və ya xaricdə yaşayan müştərilərimiz üçün isə video-təlimat ilə düzgün ölçü götürmə qaydası təqdim edirik.',
-  },
-];
 

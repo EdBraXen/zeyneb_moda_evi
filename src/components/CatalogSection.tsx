@@ -267,7 +267,7 @@ export const CatalogSection: React.FC<CatalogSectionProps> = ({
                     </button>
 
                     <a
-                      href={`https://wa.me/994501234567?text=${dressWhatsAppMsg}`}
+                      href={`https://wa.me/994557799450?text=${dressWhatsAppMsg}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="py-2.5 px-3 rounded-xl bg-[#1F1B16] hover:bg-[#332D24] text-white text-xs font-medium text-center flex items-center justify-center gap-1.5 transition-colors"

@@ -6,7 +6,6 @@ import { CatalogSection } from './components/CatalogSection';
 import { TailoringProcess } from './components/TailoringProcess';
 import { InstagramFeed } from './components/InstagramFeed';
 import { WhatsAppOrderSection } from './components/WhatsAppOrderSection';
-import { ReviewsAndFaq } from './components/ReviewsAndFaq';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { FavoritesDrawer } from './components/FavoritesDrawer';
@@ -82,9 +81,6 @@ export default function App() {
 
         {/* 6. WhatsApp Inquiry & Custom Order Form */}
         <WhatsAppOrderSection />
-
-        {/* 7. Reviews & FAQs */}
-        <ReviewsAndFaq />
       </main>
 
       {/* Footer */}
