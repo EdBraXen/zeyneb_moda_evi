@@ -183,6 +183,13 @@ export const CatalogSection: React.FC<CatalogSectionProps> = ({
                     alt={dress.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = 'true';
+                        target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
+                      }
+                    }}
                   />
 
                   {/* Top Badge */}

@@ -94,6 +94,13 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
                     src={highlight.coverImage}
                     alt={highlight.title}
                     className="w-16 h-16 sm:w-18 sm:h-18 rounded-full object-cover object-center shadow-xs"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = 'true';
+                        target.src = highlight.coverImage.startsWith('/') ? highlight.coverImage : `/${highlight.coverImage.split('/').pop()}`;
+                      }
+                    }}
                   />
                 </div>
               </div>
@@ -155,6 +162,16 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
                 src={activeStory.items[activeItemIndex]?.image}
                 alt={activeStory.items[activeItemIndex]?.title}
                 className="w-full h-full object-cover object-center"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.tried) {
+                    target.dataset.tried = 'true';
+                    const currentImg = activeStory.items[activeItemIndex]?.image;
+                    if (currentImg) {
+                      target.src = currentImg.startsWith('/') ? currentImg : `/${currentImg.split('/').pop()}`;
+                    }
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
 

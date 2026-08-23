@@ -76,6 +76,13 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                   src={dress.image}
                   alt={dress.title}
                   className="w-16 h-20 rounded-xl object-cover flex-shrink-0 cursor-pointer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.dataset.tried) {
+                      target.dataset.tried = 'true';
+                      target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
+                    }
+                  }}
                   onClick={() => {
                     onSelectDress(dress);
                     onClose();

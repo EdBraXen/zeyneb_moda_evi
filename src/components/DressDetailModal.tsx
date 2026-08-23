@@ -59,6 +59,13 @@ export const DressDetailModal: React.FC<DressDetailModalProps> = ({
               src={dress.image}
               alt={dress.title}
               className="w-full h-full object-cover object-center"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.dataset.tried) {
+                  target.dataset.tried = 'true';
+                  target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
+                }
+              }}
             />
             {/* Tag Badge */}
             <div className="absolute top-4 left-4">

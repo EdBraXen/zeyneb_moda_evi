@@ -135,6 +135,13 @@ export const InstagramFeed: React.FC = () => {
                 alt="Zeyneb Moda Evi Instagram Post"
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.tried) {
+                    target.dataset.tried = 'true';
+                    target.src = post.image.startsWith('/') ? post.image : `/${post.image.split('/').pop()}`;
+                  }
+                }}
               />
 
               {/* Instagram Hover Overlay */}
