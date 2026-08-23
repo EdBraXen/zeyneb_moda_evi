@@ -95,7 +95,7 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
                     src={highlight.coverImage}
                     alt={highlight.title}
                     className="w-16 h-16 sm:w-18 sm:h-18 rounded-full object-cover object-center shadow-xs"
-                    onError={(e) => handleImageError(e, highlight.coverImage)}
+                    onError={(e) => handleImageError(e, highlight.coverImage, highlight.title)}
                   />
                 </div>
               </div>
@@ -157,7 +157,7 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
                 src={activeStory.items[activeItemIndex]?.image}
                 alt={activeStory.items[activeItemIndex]?.title}
                 className="w-full h-full object-cover object-center"
-                onError={(e) => handleImageError(e, activeStory.items[activeItemIndex]?.image || '')}
+                onError={(e) => handleImageError(e, activeStory.items[activeItemIndex]?.image || '', activeStory.items[activeItemIndex]?.title || activeStory.title)}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
 

@@ -77,7 +77,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                   src={dress.image}
                   alt={dress.title}
                   className="w-16 h-20 rounded-xl object-cover flex-shrink-0 cursor-pointer"
-                  onError={(e) => handleImageError(e, dress.image)}
+                  onError={(e) => handleImageError(e, dress.image, dress.title)}
                   onClick={() => {
                     onSelectDress(dress);
                     onClose();

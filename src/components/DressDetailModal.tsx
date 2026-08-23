@@ -60,7 +60,7 @@ export const DressDetailModal: React.FC<DressDetailModalProps> = ({
               src={dress.image}
               alt={dress.title}
               className="w-full h-full object-cover object-center"
-              onError={(e) => handleImageError(e, dress.image)}
+              onError={(e) => handleImageError(e, dress.image, dress.title)}
             />
             {/* Tag Badge */}
             <div className="absolute top-4 left-4">
