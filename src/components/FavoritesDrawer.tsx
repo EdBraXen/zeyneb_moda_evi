@@ -93,7 +93,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                       onSelectDress(dress);
                       onClose();
                     }}
-                    className="text-xs font-bold text-[#1F1B16] truncate cursor-pointer hover:text-[#99732B]"
+                    className="text-xs font-bold text-[#1F1B16] cursor-pointer hover:text-[#99732B]"
                   >
                     {dress.title}
                   </h5>

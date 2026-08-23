@@ -99,7 +99,7 @@ export const StoryHighlights: React.FC<StoryHighlightsProps> = ({ highlights }) 
                   />
                 </div>
               </div>
-              <span className="text-xs font-medium text-[#2E2820] group-hover:text-[#99732B] transition-colors max-w-[80px] text-center truncate">
+              <span className="text-[11px] font-medium text-[#2E2820] group-hover:text-[#99732B] transition-colors max-w-[84px] text-center leading-tight">
                 {highlight.title}
               </span>
             </button>

@@ -156,7 +156,7 @@ export const InstagramFeed: React.FC = () => {
                       {post.comments}
                     </span>
                   </div>
-                  <p className="text-[10px] line-clamp-2 text-[#E8DFD5] opacity-90">
+                  <p className="text-[10px] leading-tight text-[#E8DFD5] opacity-90">
                     {post.caption}
                   </p>
                 </div>

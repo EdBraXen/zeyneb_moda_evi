@@ -1,12 +1,12 @@
 import { DressItem, StoryHighlight, ReviewItem, FAQItem } from '../types';
 
-import paltar1Img from '../assets/images/paltar1.png';
-import paltar2Img from '../assets/images/paltar2.png';
-import paltar3Img from '../assets/images/paltar3.png';
-import paltar4Img from '../assets/images/paltar4.png';
-import paltar5Img from '../assets/images/paltar5.png';
-import sonZengTikimImg from '../assets/images/Son_Zeng_tikim.png';
-import sonZengVecerImg from '../assets/images/Son_Zeng_vecer.png';
+import paltar1Img from '../images/paltar1.png';
+import paltar2Img from '../images/paltar2.png';
+import paltar3Img from '../images/paltar3.png';
+import paltar4Img from '../images/paltar4.png';
+import paltar5Img from '../images/paltar5.png';
+import sonZengTikimImg from '../images/Son_Zeng_tikim.png';
+import sonZengVecerImg from '../images/Son_Zeng_vecer.png';
 
 export {
   paltar1Img,

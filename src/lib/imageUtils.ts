@@ -46,7 +46,7 @@ export function generateFallbackSvg(title: string = 'Zeyneb Moda Evi'): string {
     <text x="300" y="612" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#99732B" text-anchor="middle" letter-spacing="4">ZEYNEB MODA EVİ</text>
     <text x="300" y="642" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#6E6254" text-anchor="middle">Fərdi Tikiliş &amp; Eksklüziv Ziyafət Libası</text>
   </svg>`;
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
 }
 
 export function getFilenameFromSrc(src: string): string {
@@ -62,6 +62,12 @@ export function getFilenameFromSrc(src: string): string {
   return 'paltar1.png';
 }
 
+function publicAssetPath(path: string): string {
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return base.endsWith('/') ? `${base}${cleanPath}` : `${base}/${cleanPath}`;
+}
+
 export function handleImageError(
   e: React.SyntheticEvent<HTMLImageElement, Event>,
   originalSrc: string,
@@ -69,17 +75,19 @@ export function handleImageError(
 ) {
   const target = e.currentTarget;
   const stage = parseInt(target.dataset.stage || '0', 10);
+  if (stage >= 4) return;
+
   const filename = getFilenameFromSrc(originalSrc || target.src);
 
   if (stage === 0) {
     target.dataset.stage = '1';
-    target.src = `/${filename}`;
+    target.src = publicAssetPath(filename);
   } else if (stage === 1) {
     target.dataset.stage = '2';
-    target.src = `/images/${filename}`;
+    target.src = publicAssetPath(`images/${filename}`);
   } else if (stage === 2) {
     target.dataset.stage = '3';
-    target.src = `./${filename}`;
+    target.src = publicAssetPath(`src/images/${filename}`);
   } else if (stage === 3) {
     target.dataset.stage = '4';
     target.src = generateFallbackSvg(title || target.alt);

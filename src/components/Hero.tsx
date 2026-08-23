@@ -143,7 +143,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog }) => {
                   <span className="text-[10px] font-bold text-[#99732B] uppercase tracking-wider">
                     Son Zəng & Məzun
                   </span>
-                  <span className="text-xs font-semibold text-[#1F1B16] line-clamp-1">
+                  <span className="text-xs font-semibold text-[#1F1B16]">
                     Veçer Gecəsi Libası
                   </span>
                   <span className="text-[10px] text-[#7A7062] mt-0.5">
