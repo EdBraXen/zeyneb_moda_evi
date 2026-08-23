@@ -1,0 +1,6 @@
+{
+  "name": "Zeyneb Moda Evi",
+  "description": "Fərdi tikiliş və zövqlü ziyafət libasları kataloqu, Instagram vitrini və WhatsApp sifariş platforması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
