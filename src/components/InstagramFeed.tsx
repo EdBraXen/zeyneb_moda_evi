@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Heart, MessageCircle, ExternalLink, Bookmark, CheckCircle2 } from 'lucide-react';
+import { handleImageError } from '../lib/imageUtils';
 import {
   paltar1Img,
   paltar2Img,
@@ -135,13 +136,7 @@ export const InstagramFeed: React.FC = () => {
                 alt="Zeyneb Moda Evi Instagram Post"
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.dataset.tried) {
-                    target.dataset.tried = 'true';
-                    target.src = post.image.startsWith('/') ? post.image : `/${post.image.split('/').pop()}`;
-                  }
-                }}
+                onError={(e) => handleImageError(e, post.image)}
               />
 
               {/* Instagram Hover Overlay */}

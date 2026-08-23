@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DressItem } from '../types';
 import { X, MessageCircle, Heart, Sparkles, Scissors, Clock, Layers, ShieldCheck, Check, Share2 } from 'lucide-react';
+import { handleImageError } from '../lib/imageUtils';
 
 interface DressDetailModalProps {
   dress: DressItem | null;
@@ -59,13 +60,7 @@ export const DressDetailModal: React.FC<DressDetailModalProps> = ({
               src={dress.image}
               alt={dress.title}
               className="w-full h-full object-cover object-center"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.dataset.tried) {
-                  target.dataset.tried = 'true';
-                  target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
-                }
-              }}
+              onError={(e) => handleImageError(e, dress.image)}
             />
             {/* Tag Badge */}
             <div className="absolute top-4 left-4">

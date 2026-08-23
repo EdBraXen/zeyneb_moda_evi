@@ -1,6 +1,7 @@
 import React from 'react';
 import { sonZengTikimImg } from '../data/catalog';
 import { Scissors, Ruler, Sparkles, CheckCircle2, MessageCircle, Clock, Shield } from 'lucide-react';
+import { handleImageError } from '../lib/imageUtils';
 
 export const TailoringProcess: React.FC = () => {
   const steps = [
@@ -42,13 +43,7 @@ export const TailoringProcess: React.FC = () => {
                 src={sonZengTikimImg}
                 alt="Zeyneb Moda Evi Dərzi Əl İşi və Sənətkarlıq"
                 className="w-full h-auto object-cover aspect-[4/3]"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.dataset.tried) {
-                    target.dataset.tried = 'true';
-                    target.src = '/Son_Zeng_tikim.png';
-                  }
-                }}
+                onError={(e) => handleImageError(e, sonZengTikimImg)}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1F1B16]/70 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white">

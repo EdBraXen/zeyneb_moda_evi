@@ -1,6 +1,7 @@
 import React from 'react';
 import { DressItem } from '../types';
 import { X, MessageCircle, Trash2, ArrowRight } from 'lucide-react';
+import { handleImageError } from '../lib/imageUtils';
 
 interface FavoritesDrawerProps {
   isOpen: boolean;
@@ -76,13 +77,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                   src={dress.image}
                   alt={dress.title}
                   className="w-16 h-20 rounded-xl object-cover flex-shrink-0 cursor-pointer"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    if (!target.dataset.tried) {
-                      target.dataset.tried = 'true';
-                      target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
-                    }
-                  }}
+                  onError={(e) => handleImageError(e, dress.image)}
                   onClick={() => {
                     onSelectDress(dress);
                     onClose();

@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { DressItem, DressCategory } from '../types';
 import { DressDetailModal } from './DressDetailModal';
 import { Heart, Search, Eye, MessageCircle, Sparkles, Filter, SlidersHorizontal } from 'lucide-react';
+import { handleImageError } from '../lib/imageUtils';
 
 interface CatalogSectionProps {
   items: DressItem[];
@@ -183,13 +184,7 @@ export const CatalogSection: React.FC<CatalogSectionProps> = ({
                     alt={dress.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                     loading="lazy"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      if (!target.dataset.tried) {
-                        target.dataset.tried = 'true';
-                        target.src = dress.image.startsWith('/') ? dress.image : `/${dress.image.split('/').pop()}`;
-                      }
-                    }}
+                    onError={(e) => handleImageError(e, dress.image)}
                   />
 
                   {/* Top Badge */}
