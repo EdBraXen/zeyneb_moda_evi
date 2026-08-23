@@ -77,7 +77,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                   src={dress.image}
                   alt={dress.title}
                   className="w-16 h-20 rounded-xl object-cover flex-shrink-0 cursor-pointer"
-                  onError={(e) => handleImageError(e, dress.image)}
+                  onError={(e) => handleImageError(e, dress.image, dress.title)}
                   onClick={() => {
                     onSelectDress(dress);
                     onClose();
@@ -93,7 +93,7 @@ export const FavoritesDrawer: React.FC<FavoritesDrawerProps> = ({
                       onSelectDress(dress);
                       onClose();
                     }}
-                    className="text-xs font-bold text-[#1F1B16] truncate cursor-pointer hover:text-[#99732B]"
+                    className="text-xs font-bold text-[#1F1B16] cursor-pointer hover:text-[#99732B]"
                   >
                     {dress.title}
                   </h5>

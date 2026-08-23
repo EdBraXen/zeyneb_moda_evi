@@ -106,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog }) => {
                   src={paltar1Img}
                   alt="Zeyneb Moda Evi Eksklüziv Ziyafət Libası"
                   className="w-full h-full object-cover object-center transform hover:scale-103 transition-transform duration-700"
-                  onError={(e) => handleImageError(e, paltar1Img)}
+                  onError={(e) => handleImageError(e, paltar1Img, 'Eksklüziv Ziyafət Libası')}
                 />
 
                 {/* Subtle Gradient Overlay at bottom */}
@@ -137,13 +137,13 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog }) => {
                   src={sonZengVecerImg}
                   alt="Son Zəng Veçer Libası"
                   className="w-14 h-16 rounded-xl object-cover"
-                  onError={(e) => handleImageError(e, sonZengVecerImg)}
+                  onError={(e) => handleImageError(e, sonZengVecerImg, 'Son Zəng Veçer Libası')}
                 />
                 <div className="flex flex-col">
                   <span className="text-[10px] font-bold text-[#99732B] uppercase tracking-wider">
                     Son Zəng & Məzun
                   </span>
-                  <span className="text-xs font-semibold text-[#1F1B16] line-clamp-1">
+                  <span className="text-xs font-semibold text-[#1F1B16]">
                     Veçer Gecəsi Libası
                   </span>
                   <span className="text-[10px] text-[#7A7062] mt-0.5">

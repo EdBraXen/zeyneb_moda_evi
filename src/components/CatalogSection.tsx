@@ -184,7 +184,7 @@ export const CatalogSection: React.FC<CatalogSectionProps> = ({
                     alt={dress.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                     loading="lazy"
-                    onError={(e) => handleImageError(e, dress.image)}
+                    onError={(e) => handleImageError(e, dress.image, dress.title)}
                   />
 
                   {/* Top Badge */}
@@ -239,22 +239,22 @@ export const CatalogSection: React.FC<CatalogSectionProps> = ({
 
                     <h3
                       onClick={() => setActiveModalDress(dress)}
-                      className="font-serif text-lg font-bold text-[#1F1B16] hover:text-[#99732B] transition-colors cursor-pointer line-clamp-1"
+                      className="font-serif text-lg font-bold text-[#1F1B16] hover:text-[#99732B] transition-colors cursor-pointer"
                     >
                       {dress.title}
                     </h3>
 
-                    <p className="text-xs text-[#6B6154] line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-[#6B6154] leading-relaxed">
                       {dress.description}
                     </p>
                   </div>
 
                   {/* Fabric / Silhouette tag */}
-                  <div className="pt-2 border-t border-[#EAE1D4] flex items-center justify-between text-[11px] text-[#706454]">
-                    <span className="truncate max-w-[170px]" title={dress.details.fabric}>
+                  <div className="pt-2 border-t border-[#EAE1D4] flex items-start justify-between gap-2 text-[11px] text-[#706454]">
+                    <span className="flex-1" title={dress.details.fabric}>
                       🪡 {dress.details.fabric}
                     </span>
-                    <span className="text-[#8C8070]">Fərdi Tikiliş</span>
+                    <span className="text-[#8C8070] whitespace-nowrap">Fərdi Tikiliş</span>
                   </div>
 
                   {/* Action Buttons */}

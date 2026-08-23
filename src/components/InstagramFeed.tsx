@@ -136,7 +136,7 @@ export const InstagramFeed: React.FC = () => {
                 alt="Zeyneb Moda Evi Instagram Post"
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
-                onError={(e) => handleImageError(e, post.image)}
+                onError={(e) => handleImageError(e, post.image, post.caption)}
               />
 
               {/* Instagram Hover Overlay */}
@@ -156,7 +156,7 @@ export const InstagramFeed: React.FC = () => {
                       {post.comments}
                     </span>
                   </div>
-                  <p className="text-[10px] line-clamp-2 text-[#E8DFD5] opacity-90">
+                  <p className="text-[10px] leading-tight text-[#E8DFD5] opacity-90">
                     {post.caption}
                   </p>
                 </div>
